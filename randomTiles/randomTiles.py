@@ -1,6 +1,6 @@
 import random
 
-with open('../tiles.txt', 'r') as file:
+with open('./tiles.txt', 'r') as file:
     string_list = file.readlines()
 
 # Remove newline characters from each line
@@ -17,9 +17,10 @@ player_tiles = [player1_tiles, player2_tiles, player3_tiles, player4_tiles]
 for player in player_tiles:
     print(player)
 
-with open('../remainTiles.txt', 'w') as file:
+with open('./randomTiles/remainTiles.txt', 'w') as file:
     # remove the tiles that have been distributed to players
     tiles = tiles[56:]
+    print(len(tiles))
     for tile in tiles:
         file.write(tile + '\n')
 
