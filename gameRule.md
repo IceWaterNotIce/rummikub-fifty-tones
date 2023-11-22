@@ -4,7 +4,7 @@ Assembly instructions:
 •	learned fifty sounds
 •	have N5
 Contents:
-•	204 tiles (4 sets of tiles あ-ん, 12 濁音符號, 4 濁音符號, 4 joker tiles)
+•	204 tiles (4 sets of tiles あ-ん(each あ-ん have 46 tiles), 12 濁音符號, 4 半濁音符號, 4 joker tiles)
 Object of The Game: 
 •	To be the first player to play all the tiles from your rack by forming them into words.
  Set-up: 
