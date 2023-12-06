@@ -1,8 +1,11 @@
-# rummikub-fifty-tones
+# Rummikub Fifty Tones
 
 A Rummikub game but tiles is fifty-tones, only for study
 
 you can play this game with your friends or play it alone to train your japanese.
+
+you can find the newest version of this game include game rule in [github](https://github.com/IceWaterNotIce/rummikub-fifty-tones)
+![[WebsiteMinQrCode.png]]
 
 ## Game information
 
@@ -14,13 +17,3 @@ you can play this game with your friends or play it alone to train your japanese
 ## Game materials
 
 • 99 tiles (2 sets of tiles あ-ん(each あ-ん have 46 tiles), 3 Dakuonpu tile, 2 handakuten, 2 blank tiles)
-
-## Game rules
-
-To see the [game rule](documents/gameRule.md)
-
-## Training
-
-suggestion for single player use game materials to train his japanese.
-
-To see how to train yourself - [training](documents/training.md)
