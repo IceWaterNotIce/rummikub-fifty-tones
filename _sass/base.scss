@@ -1,8 +1,8 @@
 $backgroundColor: #ffffff;
 $bodyColor: #000000;
-$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+$bodyFont: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
-body{
+body {
   margin: 0;
   overflow: hidden;
   width: 100vw;
@@ -13,31 +13,32 @@ body{
   font-family: $bodyFont;
 }
 
-.moveable{
+.moveable {
+  --font-size: 2rem;
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-user-select: none;
-  user-select: none;
-  font-weight: 800;
-  font-size: 4rem;
-  width: 4rem;
-  height: 6rem;
+  width: var(--font-size);
+  height: calc(var(--font-size) * 1.5);
   border: 1px solid #000;
   box-shadow: 0 0 0 1px #000;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  p{
-
+  background-color: #ffffff;
+  p {
+    -webkit-user-select: none;
+    user-select: none;
+    font-weight: 800;
+    font-size: var(--font-size);
   }
   &:hover {
     cursor: move;
   }
 }
 
-.playertilesarea{
+.playertilesarea {
   position: absolute;
   bottom: 0;
   width: 100vw;

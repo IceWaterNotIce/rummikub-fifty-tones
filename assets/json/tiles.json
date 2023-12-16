@@ -1,186 +1,199 @@
 {
     "a": {
         "text": "あ",
-        "num": 1
+        "num": 2
     },
     "i": {
         "text": "い",
-        "num": 1
+        "num": 2
     },
     "u": {
         "text": "う",
-        "num": 1
+        "num": 2
     },
     "e": {
         "text": "え",
-        "num": 1
+        "num": 2
     },
     "o": {
         "text": "お",
-        "num": 1
+        "num": 2
     },
     "ka": {
         "text": "か",
-        "num": 1
+        "num": 2
     },
     "ki": {
         "text": "き",
-        "num": 1
+        "num": 2
     },
     "ku": {
         "text": "く",
-        "num": 1
+        "num": 2
     },
     "ke": {
         "text": "け",
-        "num": 1
+        "num": 2
     },
     "ko": {
         "text": "こ",
-        "num": 1
+        "num": 2
     },
     "sa": {
         "text": "さ",
-        "num": 1
+        "num": 2
     },
     "shi": {
         "text": "し",
-        "num": 1
+        "num": 2
     },
     "su": {
         "text": "す",
-        "num": 1
+        "num": 2
     },
     "se": {
         "text": "せ",
-        "num": 1
+        "num": 2
     },
     "so": {
         "text": "そ",
-        "num": 1
+        "num": 2
     },
     "ta": {
         "text": "た",
-        "num": 1
+        "num": 2
     },
     "chi": {
         "text": "ち",
-        "num": 1
+        "num": 2
     },
     "tsu": {
         "text": "つ",
-        "num": 1
+        "num": 2
     },
     "te": {
         "text": "て",
-        "num": 1
+        "num": 2
     },
     "to": {
         "text": "と",
-        "num": 1
+        "num": 2
     },
     "na": {
         "text": "な",
-        "num": 1
+        "num": 2
     },
     "ni": {
         "text": "に",
-        "num": 1
+        "num": 2
     },
     "nu": {
         "text": "ぬ",
-        "num": 1
+        "num": 2
     },
     "ne": {
         "text": "ね",
-        "num": 1
+        "num": 2
     },
     "no": {
         "text": "の",
-        "num": 1
+        "num": 2
     },
     "ha": {
         "text": "は",
-        "num": 1
+        "num": 2
     },
     "hi": {
         "text": "ひ",
-        "num": 1
+        "num": 2
     },
     "fu": {
         "text": "ふ",
-        "num": 1
+        "num": 2
     },
     "he": {
         "text": "へ",
-        "num": 1
+        "num": 2
     },
     "ho": {
         "text": "ほ",
-        "num": 1
+        "num": 2
     },
     "ma": {
         "text": "ま",
-        "num": 1
+        "num": 2
     },
     "mi": {
         "text": "み",
-        "num": 1
+        "num": 2
     },
     "mu": {
         "text": "む",
-        "num": 1
+        "num": 2
     },
     "me": {
         "text": "め",
-        "num": 1
+        "num": 2
     },
     "mo": {
         "text": "も",
-        "num": 1
+        "num": 2
     },
     "ya": {
         "text": "や",
-        "num": 1
+        "num": 2
     },
     "yu": {
         "text": "ゆ",
-        "num": 1
+        "num": 2
     },
     "yo": {
         "text": "よ",
-        "num": 1
+        "num": 2
     },
     "ra": {
         "text": "ら",
-        "num": 1
+        "num": 2
     },
     "ri": {
         "text": "り",
-        "num": 1
+        "num": 2
     },
     "ru": {
         "text": "る",
-        "num": 1
+        "num": 2
     },
     "re": {
         "text": "れ",
-        "num": 1
+        "num": 2
     },
     "ro": {
         "text": "ろ",
-        "num": 1
+        "num": 2
     },
     "wa": {
         "text": "わ",
-        "num": 1
+        "num": 2
     },
     "wo": {
         "text": "を",
-        "num": 1
+        "num": 2
     },
     "n": {
         "text": "ん",
-        "num": 8
+        "num": 2
+    },
+    "Dakuten":{
+        "text": "&#12441;",
+        "num": 2
+    },
+    "Handakuten":{
+        "text": "&#12442;",
+        "num": 2
+    },
+    "joker":{
+        "text": "",
+        "num": 2
     }
+
 }

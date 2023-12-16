@@ -17,12 +17,21 @@
   <div class="playertilesarea">
 
   </div>
+  <script type="importmap">
+    {
+      "imports": {
+        "jquery": "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js",
+        "makeElementsMoveable": "{{ '/assets/js/makeElementsMoveable.js' | relative_url }}",
+        "other": "{{ '/assets/js/other.js' | relative_url }}"
+      }
+    }
+  </script>
+  <script type="module">
 
+    import * as $ from "jquery";
+    import { makeElementsMoveable } from "makeElementsMoveable";
+    import { randomizeTiles } from "other";
 
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-  <script>
     //get json data
     document.addEventListener("DOMContentLoaded", function () {
       fetch("{{ '/assets/json/tiles.json' | relative_url }}", { cache: 'no-store' })
@@ -45,29 +54,46 @@
             }
           }
 
-          moveable();
+          makeElementsMoveable();
 
 
-          const tilesele = document.querySelectorAll(".tile");
+          const tilesele = Array.from(document.querySelectorAll(".tile"));
           const tileselelength = tilesele.length;
+          const tileselewidth = tilesele[0].offsetWidth;
           var player1tiles = [];
+          var player2tiles = [];
+          var player3tiles = [];
+          var player4tiles = [];
 
+          //randomize tiles to player
+          let playertilesarea = document.querySelector(".playertilesarea");
 
-          //randomize tiles
-          for (var i = 0; i < 14; i++) {
-            var randomnum = Math.floor(Math.random() * tileselelength);
-            var randomtile = tilesele[randomnum];
-            randomtile.style.left = "700px";
-            randomtile.style.top = "100px";
-            player1tiles.push(randomtile);
-          }
+          randomizeTiles(tilesele, player1tiles);
+          randomizeTiles(tilesele, player2tiles);
+          randomizeTiles(tilesele, player3tiles);
+          randomizeTiles(tilesele, player4tiles);
 
-          console.log(player1tiles);
+          player1tiles.forEach(element => {
+            element.style.left = playertilesarea.offsetLeft + 70 + (player1tiles.indexOf(element) * tileselewidth) + "px";
+            element.style.top = "500px";
+          });
+          player2tiles.forEach(element => {
+            element.style.left = playertilesarea.offsetLeft + 70 + (player2tiles.indexOf(element) * tileselewidth) + "px";
+            element.style.top = "10px";
+          });
+          player3tiles.forEach(element => {
+            element.style.left = playertilesarea.offsetLeft + 70 + (player3tiles.indexOf(element) * tileselewidth) + "px";
+            element.style.top = "100px";
+          });
+          player4tiles.forEach(element => {
+            element.style.left = playertilesarea.offsetLeft + 70 + (player4tiles.indexOf(element) * tileselewidth) + "px";
+            element.style.top = "200px";
+          });
+
 
         });
     });
   </script>
-  <script src="{{ '/assets/js/moveable.js' | relative_url }}"></script>
 </body>
 
 </html>
