@@ -1,12 +1,73 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-  </head>
-  <body>
-    {{ content }}
-  </body>
+<html lang="en-US">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>{{ page.title }} - {{ site.title }}</title>
+
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <!-- import jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  {{ content }}
+
+  <div class="playertilesarea">
+
+  </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script>
+    //get json data
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch("{{ '/assets/json/tiles.json' | relative_url }}", { cache: 'no-store' })
+        .then(response => response.text())
+        .then(data => {
+          const tilesObj = JSON.parse(data);
+          const tilelength = Object.keys(tilesObj).length;
+          const tiletexts = Object.values(tilesObj).map(obj => obj.text);
+          const tilenums = Object.values(tilesObj).map(obj => obj.num);
+
+          //create tiles
+          for (var i = 0; i < tilelength; i++) {
+            for (var j = 0; j < tilenums[i]; j++) {
+              var tile = document.createElement("div");
+              var tile_p = document.createElement("p");
+              tile.className = "moveable tile";
+              tile_p.innerHTML = tiletexts[i];
+              tile.appendChild(tile_p);
+              document.body.appendChild(tile);
+            }
+          }
+
+          moveable();
+
+
+          const tilesele = document.querySelectorAll(".tile");
+          const tileselelength = tilesele.length;
+          var player1tiles = [];
+
+
+          //randomize tiles
+          for (var i = 0; i < 14; i++) {
+            var randomnum = Math.floor(Math.random() * tileselelength);
+            var randomtile = tilesele[randomnum];
+            randomtile.style.left = "700px";
+            randomtile.style.top = "100px";
+            player1tiles.push(randomtile);
+          }
+
+          console.log(player1tiles);
+
+        });
+    });
+  </script>
+  <script src="{{ '/assets/js/moveable.js' | relative_url }}"></script>
+</body>
+
 </html>
