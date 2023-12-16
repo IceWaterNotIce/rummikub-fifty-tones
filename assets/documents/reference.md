@@ -2,4 +2,4 @@
 
 | title | link |
 | ----- | ---- |
-| Rummikub | https://rummikub.com/ |
+| Rummikub | [https://rummikub.com/](https://rummikub.com/) |
