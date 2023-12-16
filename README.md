@@ -17,10 +17,10 @@ you can play this game with your friends or play it alone to train your japanese
 
 ## Game rules
 
-To see the [game rule](documents/gameRule.md)
+To see the [game rule](assets/documents/gameRule.md)
 
 ## Training
 
 suggestion for single player use game materials to train his japanese.
 
-To see how to train yourself - [training](documents/training.md)
+To see how to train yourself - [training](assets/documents/training.md)
