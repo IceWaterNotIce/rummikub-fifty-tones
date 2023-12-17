@@ -183,17 +183,16 @@
         "text": "ん",
         "num": 2
     },
-    "Dakuten":{
+    "Dakuten": {
         "text": "&#12441;",
         "num": 2
     },
-    "Handakuten":{
+    "Handakuten": {
         "text": "&#12442;",
         "num": 2
     },
-    "joker":{
+    "joker": {
         "text": "",
         "num": 2
     }
-
 }
